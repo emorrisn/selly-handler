@@ -20,7 +20,7 @@ class Webhook
 
     private function header()
     {
-        return $_SERVER['HTTP-X-Selly-Signature'];
+        return $_SERVER['HTTP_X_SELLY_SIGNATURE'];
     }
 
     private function validate($post, $secret, $header)
