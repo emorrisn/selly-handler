@@ -8,7 +8,7 @@ This class is for generating Selly **payments** using their API and to help you 
 * Easy to use and install
 * Create **payments** easily
 * Handle **webhooks** easily
-* Support for **Bitcoin** and **PayPal**
+* Support for **Bitcoin**, **PayPal** and **Ethereum**
 
 ## Examples
 * Generate payment
@@ -29,6 +29,8 @@ $invoice = new Invoice('CUSTOMER EMAIL',10, true);
 $invoice->Gateway()->Bitcoin();  
 // Or
 $invoice->Gateway()->PayPal();  
+// Or
+$invoice->Gateway()->Ethereum();  
   
 // Get the payment object, if you selected white label earlier
 // you will get the raw data to display or a PayPal link.

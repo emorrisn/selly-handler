@@ -42,4 +42,11 @@ class Gateway
     public function PayPal(){
         $this->instance->setGateway('PayPal');
     }
+
+    /**
+     * Set the gateway to Ethereum
+     */
+    public function Ethereum(){
+        $this->instance->setGateway('Ethereum');
+    }
 }
