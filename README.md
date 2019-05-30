@@ -59,7 +59,7 @@ if ($webhook->validated()){
 ## Installation
 
 ```
-composer install lyutiq/selly-handler
+composer require lyutiq/selly-handler
 ```
 
 Have fun!
