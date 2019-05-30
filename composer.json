@@ -5,9 +5,12 @@
     "require": {
         "selly/selly-php": "^1.0"
     },
+    "license": "MIT",
+    "homepage": "https://database.black",
+    "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {
-            "SellyHandler": "src/"
+        "psr-4": {
+            "SellyHandler\\": "src/"
         }
     }
 }
