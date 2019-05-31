@@ -25,7 +25,7 @@ class Webhook
 
     private function validate($post, $secret, $header)
     {
-        $signature = hash_hmac('sha512', json_encode($post), $secret);
+        $signature = hash_hmac('sha512', $post, $secret);
             if (hash_equals($signature, $header)) {
                 return true;
             }
