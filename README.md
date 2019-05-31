@@ -36,6 +36,8 @@ $invoice->Gateway()->Ethereum();
 // you will get the raw data to display or a PayPal link.
 // Non white label payments will just return an URL.
 $payment = new Payment($invoice,'RETURN_URL','WEBHOOK_URL');
+// Get the payment object
+$payment->pay()
 ```
 * Webhook
 ```php
